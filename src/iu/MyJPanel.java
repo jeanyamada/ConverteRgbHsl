@@ -1,0 +1,475 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package iu;
+
+import converteCores.ConvertColor;
+import java.awt.Color;
+import javax.swing.JOptionPane;
+import sistemaCores.Hsl;
+import sistemaCores.Rgb;
+
+/**
+ *
+ * @author jeany
+ */
+public class MyJPanel extends javax.swing.JPanel {
+
+    /**
+     * @return the jFormattedTextFieldB
+     */
+    public javax.swing.JFormattedTextField getjFormattedTextFieldB() {
+        return jFormattedTextFieldB;
+    }
+
+    /**
+     * @param jFormattedTextFieldB the jFormattedTextFieldB to set
+     */
+    public void setjFormattedTextFieldB(javax.swing.JFormattedTextField jFormattedTextFieldB) {
+        this.jFormattedTextFieldB = jFormattedTextFieldB;
+    }
+
+    /**
+     * @return the jFormattedTextFieldG
+     */
+    public javax.swing.JFormattedTextField getjFormattedTextFieldG() {
+        return jFormattedTextFieldG;
+    }
+
+    /**
+     * @param jFormattedTextFieldG the jFormattedTextFieldG to set
+     */
+    public void setjFormattedTextFieldG(javax.swing.JFormattedTextField jFormattedTextFieldG) {
+        this.jFormattedTextFieldG = jFormattedTextFieldG;
+    }
+
+    /**
+     * @return the jFormattedTextFieldH
+     */
+    public javax.swing.JFormattedTextField getjFormattedTextFieldH() {
+        return jFormattedTextFieldH;
+    }
+
+    /**
+     * @param jFormattedTextFieldH the jFormattedTextFieldH to set
+     */
+    public void setjFormattedTextFieldH(javax.swing.JFormattedTextField jFormattedTextFieldH) {
+        this.jFormattedTextFieldH = jFormattedTextFieldH;
+    }
+
+    /**
+     * @return the jFormattedTextFieldL
+     */
+    public javax.swing.JFormattedTextField getjFormattedTextFieldL() {
+        return jFormattedTextFieldL;
+    }
+
+    /**
+     * @param jFormattedTextFieldL the jFormattedTextFieldL to set
+     */
+    public void setjFormattedTextFieldL(javax.swing.JFormattedTextField jFormattedTextFieldL) {
+        this.jFormattedTextFieldL = jFormattedTextFieldL;
+    }
+
+    /**
+     * @return the jFormattedTextFieldR
+     */
+    public javax.swing.JFormattedTextField getjFormattedTextFieldR() {
+        return jFormattedTextFieldR;
+    }
+
+    /**
+     * @param jFormattedTextFieldR the jFormattedTextFieldR to set
+     */
+    public void setjFormattedTextFieldR(javax.swing.JFormattedTextField jFormattedTextFieldR) {
+        this.jFormattedTextFieldR = jFormattedTextFieldR;
+    }
+
+    /**
+     * @return the jFormattedTextFieldS
+     */
+    public javax.swing.JFormattedTextField getjFormattedTextFieldS() {
+        return jFormattedTextFieldS;
+    }
+
+    /**
+     * @param jFormattedTextFieldS the jFormattedTextFieldS to set
+     */
+    public void setjFormattedTextFieldS(javax.swing.JFormattedTextField jFormattedTextFieldS) {
+        this.jFormattedTextFieldS = jFormattedTextFieldS;
+    }
+
+    /**
+     * @return the jLabelB
+     */
+    public javax.swing.JLabel getjLabelB() {
+        return jLabelB;
+    }
+
+    /**
+     * @param jLabelB the jLabelB to set
+     */
+    public void setjLabelB(javax.swing.JLabel jLabelB) {
+        this.jLabelB = jLabelB;
+    }
+
+    /**
+     * @return the jLabelG
+     */
+    public javax.swing.JLabel getjLabelG() {
+        return jLabelG;
+    }
+
+    /**
+     * @param jLabelG the jLabelG to set
+     */
+    public void setjLabelG(javax.swing.JLabel jLabelG) {
+        this.jLabelG = jLabelG;
+    }
+
+    /**
+     * @return the jLabelH
+     */
+    public javax.swing.JLabel getjLabelH() {
+        return jLabelH;
+    }
+
+    /**
+     * @param jLabelH the jLabelH to set
+     */
+    public void setjLabelH(javax.swing.JLabel jLabelH) {
+        this.jLabelH = jLabelH;
+    }
+
+    /**
+     * @return the jLabelL
+     */
+    public javax.swing.JLabel getjLabelL() {
+        return jLabelL;
+    }
+
+    /**
+     * @param jLabelL the jLabelL to set
+     */
+    public void setjLabelL(javax.swing.JLabel jLabelL) {
+        this.jLabelL = jLabelL;
+    }
+
+    /**
+     * @return the jLabelR
+     */
+    public javax.swing.JLabel getjLabelR() {
+        return jLabelR;
+    }
+
+    /**
+     * @param jLabelR the jLabelR to set
+     */
+    public void setjLabelR(javax.swing.JLabel jLabelR) {
+        this.jLabelR = jLabelR;
+    }
+
+    /**
+     * @return the jLabelS
+     */
+    public javax.swing.JLabel getjLabelS() {
+        return jLabelS;
+    }
+
+    /**
+     * @param jLabelS the jLabelS to set
+     */
+    public void setjLabelS(javax.swing.JLabel jLabelS) {
+        this.jLabelS = jLabelS;
+    }
+
+    /**
+     * Creates new form MyJPanel
+     */
+    public MyJPanel() {
+        initComponents();
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jLabelH = new javax.swing.JLabel();
+        jLabelS = new javax.swing.JLabel();
+        jLabelL = new javax.swing.JLabel();
+        jFormattedTextFieldS = new javax.swing.JFormattedTextField();
+        jFormattedTextFieldH = new javax.swing.JFormattedTextField();
+        jFormattedTextFieldL = new javax.swing.JFormattedTextField();
+        jFormattedTextFieldG = new javax.swing.JFormattedTextField();
+        jFormattedTextFieldR = new javax.swing.JFormattedTextField();
+        jFormattedTextFieldB = new javax.swing.JFormattedTextField();
+        jLabelR = new javax.swing.JLabel();
+        jLabelG = new javax.swing.JLabel();
+        jLabelB = new javax.swing.JLabel();
+
+        jLabelH.setText("H");
+
+        jLabelS.setText("S");
+
+        jLabelL.setText("L");
+
+        jFormattedTextFieldS.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jFormattedTextFieldSKeyReleased(evt);
+            }
+        });
+
+        jFormattedTextFieldH.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+        jFormattedTextFieldH.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jFormattedTextFieldHKeyReleased(evt);
+            }
+        });
+
+        jFormattedTextFieldL.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jFormattedTextFieldLKeyReleased(evt);
+            }
+        });
+
+        jFormattedTextFieldG.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jFormattedTextFieldGKeyReleased(evt);
+            }
+        });
+
+        jFormattedTextFieldR.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jFormattedTextFieldRKeyReleased(evt);
+            }
+        });
+
+        jFormattedTextFieldB.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jFormattedTextFieldBKeyReleased(evt);
+            }
+        });
+
+        jLabelR.setText("R");
+
+        jLabelG.setText("G");
+
+        jLabelB.setText("B");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabelS)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jFormattedTextFieldS, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabelH)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jFormattedTextFieldH, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addComponent(jLabelL)
+                        .addGap(26, 26, 26)
+                        .addComponent(jFormattedTextFieldL, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabelG)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jFormattedTextFieldG, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabelR)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jFormattedTextFieldR, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addComponent(jLabelB)
+                        .addGap(26, 26, 26)
+                        .addComponent(jFormattedTextFieldB, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jFormattedTextFieldR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelR))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jFormattedTextFieldG, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelG))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jFormattedTextFieldB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelB)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jFormattedTextFieldH, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelH))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jFormattedTextFieldS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelS))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jFormattedTextFieldL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelL))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jFormattedTextFieldHKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jFormattedTextFieldHKeyReleased
+        // TODO add your handling code here:
+        Hsl hsl= new Hsl();
+
+        try {
+            hsl.setH(Double.parseDouble(jFormattedTextFieldH.getText()));
+            hsl.setS(Double.parseDouble(jFormattedTextFieldS.getText()));
+            hsl.setL(Double.parseDouble(jFormattedTextFieldL.getText()));
+
+            if((hsl.getH() >= 0 && hsl.getH() <= 240) && (hsl.getS() >= 0 && hsl.getS() <= 240) && (hsl.getL() >= 0 && hsl.getL() <= 240)){
+                Rgb rgb = ConvertColor.hslToRgb(hsl);
+
+                jFormattedTextFieldR.setText(rgb.getR().toString());
+                jFormattedTextFieldG.setText(rgb.getG().toString());
+                jFormattedTextFieldB.setText(rgb.getB().toString());
+            }
+        } catch (NumberFormatException e) {
+        }
+
+    }//GEN-LAST:event_jFormattedTextFieldHKeyReleased
+
+    private void jFormattedTextFieldRKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jFormattedTextFieldRKeyReleased
+        // TODO add your handling code here:
+        Rgb rgb = new Rgb();
+
+        try {
+            rgb.setR(Integer.parseInt(jFormattedTextFieldR.getText()));
+            rgb.setG(Integer.parseInt(jFormattedTextFieldG.getText()));
+            rgb.setB(Integer.parseInt(jFormattedTextFieldB.getText()));
+            
+            if((rgb.getR() >= 0 && rgb.getR() <= 255) && (rgb.getG() >= 0 && rgb.getG() <= 255) && (rgb.getB() >= 0 && rgb.getB() <= 255)){
+                Hsl hsl = ConvertColor.rgbToHsl(rgb);
+
+                jFormattedTextFieldH.setText(Long.toString(Math.round(hsl.getH())));
+                jFormattedTextFieldS.setText(Long.toString(Math.round(hsl.getS())));
+                jFormattedTextFieldL.setText(Long.toString(Math.round(hsl.getL())));
+                
+            }
+        } catch (NumberFormatException e) {
+        }
+
+    }//GEN-LAST:event_jFormattedTextFieldRKeyReleased
+
+    private void jFormattedTextFieldGKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jFormattedTextFieldGKeyReleased
+        // TODO add your handling code here:
+        Rgb rgb = new Rgb();
+
+        try {
+            rgb.setR(Integer.parseInt(jFormattedTextFieldR.getText()));
+            rgb.setG(Integer.parseInt(jFormattedTextFieldG.getText()));
+            rgb.setB(Integer.parseInt(jFormattedTextFieldB.getText()));
+            
+            if((rgb.getR() >= 0 && rgb.getR() <= 255) && (rgb.getG() >= 0 && rgb.getG() <= 255) && (rgb.getB() >= 0 && rgb.getB() <= 255)){
+                Hsl hsl = ConvertColor.rgbToHsl(rgb);
+
+                jFormattedTextFieldH.setText(Long.toString(Math.round(hsl.getH())));
+                jFormattedTextFieldS.setText(Long.toString(Math.round(hsl.getS())));
+                jFormattedTextFieldL.setText(Long.toString(Math.round(hsl.getL())));
+            }
+        } catch (NumberFormatException e) {
+
+        }
+
+    }//GEN-LAST:event_jFormattedTextFieldGKeyReleased
+
+    private void jFormattedTextFieldBKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jFormattedTextFieldBKeyReleased
+        // TODO add your handling code here:
+        Rgb rgb = new Rgb();
+
+        try {
+            rgb.setR(Integer.parseInt(jFormattedTextFieldR.getText()));
+            rgb.setG(Integer.parseInt(jFormattedTextFieldG.getText()));
+            rgb.setB(Integer.parseInt(jFormattedTextFieldB.getText()));
+            
+            if((rgb.getR() >= 0 && rgb.getR() <= 255) && (rgb.getG() >= 0 && rgb.getG() <= 255) && (rgb.getB() >= 0 && rgb.getB() <= 255)){
+                Hsl hsl = ConvertColor.rgbToHsl(rgb);
+
+                jFormattedTextFieldH.setText(Long.toString(Math.round(hsl.getH())));
+                jFormattedTextFieldS.setText(Long.toString(Math.round(hsl.getS())));
+                jFormattedTextFieldL.setText(Long.toString(Math.round(hsl.getL())));
+            }
+        } catch (NumberFormatException e) {
+
+        }
+
+    }//GEN-LAST:event_jFormattedTextFieldBKeyReleased
+
+    private void jFormattedTextFieldSKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jFormattedTextFieldSKeyReleased
+        // TODO add your handling code here:
+        Hsl hsl= new Hsl();
+
+        try {
+            hsl.setH(Double.parseDouble(jFormattedTextFieldH.getText()));
+            hsl.setS(Double.parseDouble(jFormattedTextFieldS.getText()));
+            hsl.setL(Double.parseDouble(jFormattedTextFieldL.getText()));
+            
+            if((hsl.getH() >= 0 && hsl.getH() <= 240) && (hsl.getS() >= 0 && hsl.getS() <= 240) && (hsl.getL() >= 0 && hsl.getL() <= 240)){
+                Rgb rgb = ConvertColor.hslToRgb(hsl);
+
+                jFormattedTextFieldR.setText(rgb.getR().toString());
+                jFormattedTextFieldG.setText(rgb.getG().toString());
+                jFormattedTextFieldB.setText(rgb.getB().toString());
+            }
+        } catch (NumberFormatException e) {
+        }
+    }//GEN-LAST:event_jFormattedTextFieldSKeyReleased
+
+    private void jFormattedTextFieldLKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jFormattedTextFieldLKeyReleased
+        // TODO add your handling code here:
+        Hsl hsl= new Hsl();
+
+        try {
+            hsl.setH(Double.parseDouble(jFormattedTextFieldH.getText()));
+            hsl.setS(Double.parseDouble(jFormattedTextFieldS.getText()));
+            hsl.setL(Double.parseDouble(jFormattedTextFieldL.getText()));
+            if((hsl.getH() >= 0 && hsl.getH() <= 240) && (hsl.getS() >= 0 && hsl.getS() <= 240) && (hsl.getL() >= 0 && hsl.getL() <= 240)){
+                Rgb rgb = ConvertColor.hslToRgb(hsl);
+
+                jFormattedTextFieldR.setText(rgb.getR().toString());
+                jFormattedTextFieldG.setText(rgb.getG().toString());
+                jFormattedTextFieldB.setText(rgb.getB().toString());
+            }
+        } catch (NumberFormatException e) {
+        }
+    }//GEN-LAST:event_jFormattedTextFieldLKeyReleased
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JFormattedTextField jFormattedTextFieldB;
+    private javax.swing.JFormattedTextField jFormattedTextFieldG;
+    private javax.swing.JFormattedTextField jFormattedTextFieldH;
+    private javax.swing.JFormattedTextField jFormattedTextFieldL;
+    private javax.swing.JFormattedTextField jFormattedTextFieldR;
+    private javax.swing.JFormattedTextField jFormattedTextFieldS;
+    private javax.swing.JLabel jLabelB;
+    private javax.swing.JLabel jLabelG;
+    private javax.swing.JLabel jLabelH;
+    private javax.swing.JLabel jLabelL;
+    private javax.swing.JLabel jLabelR;
+    private javax.swing.JLabel jLabelS;
+    // End of variables declaration//GEN-END:variables
+}
